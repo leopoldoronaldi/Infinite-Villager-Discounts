@@ -1,3 +1,11 @@
+<p align="center">
+  <a href="https://www.curseforge.com/minecraft/mc-mods/infinite-villager-discounts">
+    <img src="https://plain-weur-prod-public.komododecks.com/202607/23/VeSAptUuVWINmHI6C6eH/image.png" width="225px" alt="CurseForge Button" hspace="10">
+  </a>
+  <a href="https://modrinth.com/project/infinite-villager-discounts">
+    <img src="https://i.ibb.co/MDnM4C3s/Chat-GPT-Image-23-Juli-2026-15-46-39-1.png" width="225px" alt="Modrinth Button" hspace="10">
+  </a>
+</p>
  
 ![](https://cdn.phototourl.com/free/2026-07-23-5b6f0697-33d5-4002-800e-a6e64c433092.png)
 
