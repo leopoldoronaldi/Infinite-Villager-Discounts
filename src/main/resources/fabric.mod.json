@@ -1,15 +1,15 @@
 {
 	"schemaVersion": 1,
 	"id": "infinite-villager-discounts",
-	"version": "1.0.0",
+	"version": "${version}",
 	"name": "Infinite Villager Discounts",
 	"description": "Restores the classic villager trading! Stack zombie curing discounts indefinitely down to 1 Emerald.",
 	"authors": [
 		"leopoldoronaldi"
 	],
 	"contact": {
-		"homepage": "https://modrinth.com/project/infinite-villager-discounts",
-		"sources": "https://github.com/leopoldoronaldi/Infinite-Villager-Discounts"
+		"sources": "https://github.com/leopoldoronaldi/Infinite-Villager-Discounts",
+		"issues": "https://github.com/leopoldoronaldi/Infinite-Villager-Discounts/issues"
 	},
 	"license": "CC-BY-4.0",
 	"icon": "assets/infinite-villager-discounts/icon.png",
@@ -23,9 +23,9 @@
 		"infinite-villager-discounts.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.19.3",
-		"minecraft": ">=26.1",
-		"java": ">=21",
-		"fabric-api": "*"
-	}
+        "fabricloader": ">=0.19.3",
+        "minecraft": ">=26.1 <=26.2",
+        "java": ">=25",
+        "fabric-api": "*"
+    }
 }

@@ -1,9 +1,10 @@
 {
 	"required": true,
 	"package": "net.openscore.infinitevillagerdiscounts.mixin",
-	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"EntityGossipsMixin"
+		"EntityGossipsMixin",
+		"GossipContainerMixin",
+		"VillagerMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

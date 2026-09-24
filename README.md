@@ -11,11 +11,47 @@
 
 **Infinite Villager Discounts** is a lightweight Fabric mod that restores the classic, overpowered villager trading mechanics. It completely removes the modern discount limits imposed by Mojang, allowing technical Minecraft players to stack curing discounts indefinitely. Get your trades down to a single emerald, just like the good old days!
 
+## Lokal starten
+
+Voraussetzungen:
+
+- Windows 10/11
+- Java 25 (Temurin 25 wird empfohlen)
+- Internetzugang für den ersten Download von Gradle, Minecraft und Fabric
+
+Der Gradle-Wrapper lädt Gradle automatisch. Alle Minecraft-/Fabric-Abhängigkeiten werden beim ersten Aufruf ebenfalls automatisch in den Gradle-Cache geladen.
+
+```powershell
+.\gradlew.bat build
+.\gradlew.bat runClient
+```
+
+`runClient` startet den Entwicklungs-Client mit dem Mod. Die erzeugte Mod-JAR liegt danach unter `build\libs`.
+
+Wenn mehrere Java-Versionen installiert sind, kann der Start explizit mit Java 25 erfolgen:
+
+```powershell
+$env:JAVA_HOME = "C:\Program Files\Eclipse Adoptium\jdk-25.0.3.9-hotspot"
+.\gradlew.bat runClient
+```
+
+Die fertige Datei liegt nach dem Build unter `build\libs\infinite-villager-discounts-1.1.0.jar`.
+Für einen normalen Fabric-Server wird nur diese JAR-Datei im `mods`-Ordner benötigt.
+Diese Version ist für Minecraft 26.1, 26.1.1, 26.1.2 und 26.2 vorgesehen.
+
 ![](https://cdn.phototourl.com/free/2026-07-23-8fefb63e-e1a8-43fa-8540-d03e8ac05166.png)
 
 ![](https://cdn.phototourl.com/free/2026-07-23-94c1e1c4-28bd-428c-8eb0-8ca7edbe69cd.png)
 
 *   **Infinite Curing Stack:** Cure Zombie Villagers multiple times to stack discounts down to 1 Emerald.
+    After every cure, let the villager restock and reopen the trade screen. The discount is
+    recalculated from the complete accumulated positive reputation and continues accumulating
+    until the normal minimum price of 1 emerald is reached. Reopening the trade screen no
+    longer restores an earlier discount.
+*   **Persistenz:** Minecraft speichert den Rabatt pro Spieler-UUID im Villager. Nach einem
+    Neustart muss deshalb derselbe Account mit derselben UUID verwendet werden. Ein anderer
+    Name in einer Offline- oder Entwicklungsumgebung wird als anderer Spieler behandelt und
+    hat keinen zuvor gespeicherten Rabatt.
 *   **Server-Side Compatible:** Can be installed strictly on the server—clients don't even need the mod!
 *   **Vanilla Friendly:** No new items or blocks added, keeping your world completely compatible with vanilla Minecraft.
 *   **Highly Optimized:** Built with performance in mind, causing zero server lag or tick spikes.
