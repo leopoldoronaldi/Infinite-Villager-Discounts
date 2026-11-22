@@ -1,13 +1,58 @@
+# Gradle
 .gradle/
 build/
-run/
 out/
+!gradle/wrapper/gradle-wrapper.jar
+gradle-app.setting
+.gradletasknamecache
+
+# Loom / Minecraft run directories (only at repo root - must not swallow src/assets)
+/run/
+/runs/
+/logs/
+/crash-reports/
+/saves/
+/mods/
+/config/
+/versions/
+/libraries/
+/assets/
+remappedSrc/
+
+# Built artifacts (never ship jars via git)
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# Freebuff workspace metadata
+.freebuff/
 
 # IDE files
 .idea/
 *.iml
+*.ipr
+*.iws
 .vscode/
+.classpath
+.project
+.settings/
+*.launch
+bin/
 
 # OS files
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Secrets and local environment
+.env
+.env.*
+*.pem
+*.p12
+*.keystore
+
+# JVM crash dumps / logs
+hs_err_pid*
+replay_pid*
+*.hprof
+*.jfr
+*.log

@@ -1,4 +1,4 @@
-package net.openscore.infinitevillagerdiscounts;
+package io.github.leopoldoronaldi.infinitevillagerdiscounts;
 
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.resources.Identifier;

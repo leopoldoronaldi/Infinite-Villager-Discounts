@@ -1,4 +1,4 @@
-package net.openscore.infinitevillagerdiscounts.mixin;
+package io.github.leopoldoronaldi.infinitevillagerdiscounts.mixin;
 
 import net.minecraft.world.entity.ai.gossip.GossipType;
 import org.spongepowered.asm.mixin.Mixin;

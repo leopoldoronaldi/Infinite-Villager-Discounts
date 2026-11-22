@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "net.openscore.infinitevillagerdiscounts.mixin",
+	"package": "io.github.leopoldoronaldi.infinitevillagerdiscounts.mixin",
 	"mixins": [
 		"EntityGossipsMixin",
 		"GossipContainerMixin",

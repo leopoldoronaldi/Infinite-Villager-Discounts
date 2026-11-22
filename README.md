@@ -9,6 +9,8 @@
  
 ![](https://cdn.phototourl.com/free/2026-07-23-5b6f0697-33d5-4002-800e-a6e64c433092.png)
 
+**Requires Minecraft 26.3** (Fabric Loader 0.19.3+, Java 25+).
+
 **Infinite Villager Discounts** is a lightweight Fabric mod that restores the classic, overpowered villager trading mechanics. It completely removes the modern discount limits imposed by Mojang, allowing technical Minecraft players to stack curing discounts indefinitely. Get your trades down to a single emerald, just like the good old days!
 
 ![](https://cdn.phototourl.com/free/2026-07-23-8fefb63e-e1a8-43fa-8540-d03e8ac05166.png)
